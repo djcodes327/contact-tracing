@@ -5,4 +5,5 @@ trigger LeadTrigger on Lead (before insert, before update) {
       leadRecord.addError('Lead Source Cannot be blank');
     }
   }
+  System.debug(Trigger.New);
 }
